@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio profesional de Wilmer Hinestroza Palacios - Estudiante de último semestre de Ingeniería de Software y Diplomado en Análisis de Datos con Python." />
+  <meta name="author" content="Wilmer Hinestroza Palacios" />
+  <meta name="keywords" content="Wilmer Hinestroza, Portafolio, Ingeniería de Software, Análisis de Datos, Python, Pandas, NumPy, Power BI, SQL, Django, JavaScript" />
+  <title>Wilmer Hinestroza | Portafolio</title>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Lottie Player Web Component -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+
+  <!-- Fondo interactivo con partículas -->
+  <div id="particles-js"></div>
+
+  <!-- Barra de navegación fija -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#inicio" class="nav-logo">Wilmer<span>.dev</span></a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="nav-wrapper" id="nav-wrapper">
+        <ul class="nav-menu">
+          <li><a href="#inicio" class="nav-link active" id="nav-inicio">Inicio</a></li>
+          <li><a href="#sobre-mi" class="nav-link" id="nav-sobre-mi">Sobre mí</a></li>
+          <li><a href="#habilidades" class="nav-link" id="nav-habilidades">Habilidades</a></li>
+          <li><a href="#proyectos" class="nav-link" id="nav-proyectos">Proyectos</a></li>
+          <li><a href="#contacto" class="nav-link" id="nav-contacto">Contacto</a></li>
+        </ul>
+
+        <!-- Selector de idioma -->
+        <div class="idioma-selector">
+          <button id="btn-es" class="btn-lang active" title="Cambiar a Español">🇪🇸 ES</button>
+          <button id="btn-en" class="btn-lang" title="Switch to English">🇺🇸 EN</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Hero / Inicio -->
+  <header id="inicio" class="hero">
+    <div class="container hero-container">
+      <div class="hero-texto">
+        <span class="hero-badge" id="hero-badge"><i class="fas fa-code"></i> Disponible para nuevos proyectos</span>
+        <h1 class="hero-title">Wilmer Hinestroza Palacios</h1>
+        <p class="hero-subtitle"><span id="texto-uni">Estudiante de último semestre de Ingeniería de Software · Diplomado en Análisis de Datos con Python</span></p>
+        <p class="hero-desc" id="hero-desc">
+          Enfocado en el desarrollo de software y el análisis de datos. Combino la ingeniería de software, bases de datos y Python para diseñar y construir soluciones tecnológicas modernas, sistemas inteligentes y análisis que potencian la toma de decisiones.
+        </p>
+
+        <div class="hero-botones">
+          <a href="#proyectos" class="btn btn-primary" id="btn-ver-proyectos">
+            <i class="fas fa-laptop-code"></i> <span>Ver Proyectos</span>
+          </a>
+          <a href="#contacto" class="btn btn-secondary" id="btn-hero-contacto">
+            <i class="fas fa-envelope"></i> <span>Contáctame</span>
+          </a>
+        </div>
+
+        <div class="hero-redes">
+          <a href="https://www.linkedin.com/in/wilmer-hinestroza-palacios-9b75962b0/" target="_blank" rel="noopener noreferrer" aria-label="Perfil de LinkedIn" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Wilmerpalacios" target="_blank" rel="noopener noreferrer" aria-label="Perfil de GitHub" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:Wilmeee70@gmail.com" aria-label="Enviar Correo" title="Correo">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://wa.me/573234478529" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Animación Lottie -->
+      <div class="hero-animacion">
+        <div class="imagen-animada">
+          <lottie-player
+            id="hero-lottie"
+            src="img/developer.json"
+            background="transparent"
+            speed="1"
+            style="width: 100%; max-width: 420px; height: auto;"
+            loop
+            autoplay>
+          </lottie-player>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="sobre-mi">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fas fa-user-tie"></i> <span id="titulo-sobre-mi">Sobre mí</span>
+        </h2>
+
+        <div class="sobre-mi-card">
+          <div class="sobre-mi-texto">
+            <p id="sobre-mi-p1">
+              Soy estudiante de octavo y último semestre de Ingeniería de Software en la Universidad Iberoamericana de Colombia. Mi formación abarca programación, desarrollo de software, bases de datos, análisis y diseño de sistemas, desarrollo web, pruebas de software y mantenimiento de aplicaciones.
+            </p>
+            <p id="sobre-mi-p2">
+              Complementé mi formación con un Diplomado en Análisis de Datos con Python, en el que trabajé con herramientas como Python, NumPy, Pandas, Power BI y Excel, desarrollando un proyecto de análisis de datos. Esta experiencia fortaleció mis habilidades para trabajar con información, analizar datos y generar resultados que pueden apoyar la toma de decisiones.
+            </p>
+            <p id="sobre-mi-p3">
+              Durante mi carrera también he adquirido conocimientos en programación orientada a objetos, estructuras de datos, bases de datos, desarrollo de aplicaciones web y móviles, pruebas de software, calidad de software y mantenimiento de aplicaciones.
+            </p>
+            <p id="sobre-mi-p4">
+              Me interesa especialmente el área de datos y bases de datos, sin dejar de lado el desarrollo de software y la creación de soluciones tecnológicas. Me motiva aprender constantemente, asumir nuevos retos y aplicar mis conocimientos en proyectos reales que aporten valor y permitan seguir creciendo profesionalmente.
+            </p>
+          </div>
+
+          <div class="sobre-mi-stats">
+            <div class="stat-box">
+              <i class="fas fa-graduation-cap"></i>
+              <h3 id="stat-semestre">8vo Semestre</h3>
+              <p id="stat-carrera">Último Semestre</p>
+            </div>
+            <div class="stat-box">
+              <i class="fas fa-chart-pie"></i>
+              <h3 id="stat-perfil">Diplomado</h3>
+              <p id="stat-enfoque">Análisis de Datos Python</p>
+            </div>
+            <div class="stat-box">
+              <i class="fas fa-code"></i>
+              <h3 id="stat-area">Software & Datos</h3>
+              <p id="stat-area-sub">Desarrollo & Bases de Datos</p>
+            </div>
+            <div class="stat-box">
+              <i class="fas fa-university"></i>
+              <h3>Ibero</h3>
+              <p id="stat-uni">Universidad Iberoamericana</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="habilidades">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fas fa-brain"></i> <span id="titulo-habilidades">Habilidades & Tecnologías</span>
+        </h2>
+
+        <!-- Stack Destacado Principal -->
+        <div class="tech-destacados">
+          <span class="tech-destacados-label" id="lbl-destacados"><i class="fas fa-star"></i> Stack Principal Destacado:</span>
+          <div class="tech-destacados-pills">
+            <span class="destacado-pill"><i class="fab fa-python"></i> Python</span>
+            <span class="destacado-pill"><i class="fas fa-table"></i> Pandas</span>
+            <span class="destacado-pill"><i class="fas fa-square-root-variable"></i> NumPy</span>
+            <span class="destacado-pill"><i class="fas fa-chart-pie"></i> Power BI</span>
+            <span class="destacado-pill"><i class="fas fa-file-excel"></i> Excel</span>
+            <span class="destacado-pill"><i class="fas fa-database"></i> SQL</span>
+            <span class="destacado-pill"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="destacado-pill"><i class="fab fa-html5"></i> HTML</span>
+            <span class="destacado-pill"><i class="fab fa-css3-alt"></i> CSS</span>
+            <span class="destacado-pill"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="destacado-pill"><i class="fab fa-github"></i> GitHub</span>
+            <span class="destacado-pill"><i class="fab fa-python"></i> Django</span>
+          </div>
+        </div>
+
+        <div class="habilidades-contenido">
+          <!-- Ilustración lateral con imagen existente -->
+          <div class="imagen-animada-lateral">
+            <img src="img/imagen-habilidades.png" alt="Ingeniero de software programando" />
+          </div>
+
+          <!-- Categorías de habilidades profesionales -->
+          <div class="habilidades-categorias">
+            
+            <!-- Análisis de datos -->
+            <div class="categoria-card">
+              <div class="categoria-header">
+                <i class="fas fa-chart-line"></i>
+                <h3 id="cat-analisis-title">Análisis de Datos</h3>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-pill"><i class="fab fa-python"></i> Python para análisis de datos</span>
+                <span class="tech-pill"><i class="fas fa-square-root-variable"></i> NumPy</span>
+                <span class="tech-pill"><i class="fas fa-table"></i> Pandas</span>
+                <span class="tech-pill"><i class="fas fa-chart-pie"></i> Power BI</span>
+                <span class="tech-pill"><i class="fas fa-file-excel"></i> Excel</span>
+                <span class="tech-pill"><i class="fas fa-filter"></i> Limpieza y transformación de datos</span>
+                <span class="tech-pill"><i class="fas fa-chart-bar"></i> Visualización de datos</span>
+                <span class="tech-pill"><i class="fas fa-magnifying-glass-chart"></i> Análisis exploratorio de datos</span>
+              </div>
+            </div>
+
+            <!-- Bases de datos -->
+            <div class="categoria-card">
+              <div class="categoria-header">
+                <i class="fas fa-database"></i>
+                <h3 id="cat-bd-title">Bases de Datos</h3>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-pill"><i class="fas fa-database"></i> SQL</span>
+                <span class="tech-pill"><i class="fas fa-project-diagram"></i> Modelado de bases de datos</span>
+                <span class="tech-pill"><i class="fas fa-sitemap"></i> Diseño de bases de datos</span>
+                <span class="tech-pill"><i class="fas fa-terminal"></i> Consultas SQL</span>
+                <span class="tech-pill"><i class="fas fa-server"></i> Fundamentos de gestión de datos</span>
+              </div>
+            </div>
+
+            <!-- Lenguajes y Frameworks -->
+            <div class="categoria-card">
+              <div class="categoria-header">
+                <i class="fas fa-code"></i>
+                <h3 id="cat-lenguajes-title">Lenguajes de Programación & Frameworks</h3>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-pill"><i class="fab fa-python"></i> Python</span>
+                <span class="tech-pill"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="tech-pill"><i class="fab fa-python"></i> Django</span>
+                <span class="tech-pill"><i class="fab fa-html5"></i> HTML</span>
+                <span class="tech-pill"><i class="fab fa-css3-alt"></i> CSS</span>
+                <span class="tech-pill"><i class="fas fa-laptop-code"></i> Desarrollo web</span>
+              </div>
+            </div>
+
+            <!-- Desarrollo de software -->
+            <div class="categoria-card">
+              <div class="categoria-header">
+                <i class="fas fa-cogs"></i>
+                <h3 id="cat-ingenieria-title">Desarrollo de Software</h3>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-pill"><i class="fas fa-cubes"></i> Programación Orientada a Objetos (POO)</span>
+                <span class="tech-pill"><i class="fas fa-network-wired"></i> Estructuras de datos</span>
+                <span class="tech-pill"><i class="fas fa-drafting-compass"></i> Análisis y diseño de sistemas</span>
+                <span class="tech-pill"><i class="fas fa-mobile-alt"></i> Desarrollo de aplicaciones</span>
+                <span class="tech-pill"><i class="fas fa-shield-halved"></i> Calidad de software</span>
+                <span class="tech-pill"><i class="fas fa-vial"></i> Pruebas de software</span>
+                <span class="tech-pill"><i class="fas fa-wrench"></i> Mantenimiento de software</span>
+              </div>
+            </div>
+
+            <!-- Herramientas -->
+            <div class="categoria-card">
+              <div class="categoria-header">
+                <i class="fas fa-tools"></i>
+                <h3 id="cat-herramientas-title">Herramientas</h3>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-pill"><i class="fab fa-git-alt"></i> Git</span>
+                <span class="tech-pill"><i class="fab fa-github"></i> GitHub</span>
+                <span class="tech-pill"><i class="fas fa-code"></i> Visual Studio Code</span>
+                <span class="tech-pill"><i class="fas fa-terminal"></i> PowerShell</span>
+              </div>
+            </div>
+
+            <!-- Otras habilidades -->
+            <div class="categoria-card">
+              <div class="categoria-header">
+                <i class="fas fa-brain"></i>
+                <h3 id="cat-blandas-title">Otras Habilidades</h3>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-pill"><i class="fas fa-puzzle-piece"></i> Resolución de problemas</span>
+                <span class="tech-pill"><i class="fas fa-chart-line"></i> Trabajo con datos</span>
+                <span class="tech-pill"><i class="fas fa-microchip"></i> Pensamiento analítico</span>
+                <span class="tech-pill"><i class="fas fa-route"></i> Análisis lógico</span>
+                <span class="tech-pill"><i class="fas fa-book-reader"></i> Aprendizaje autónomo</span>
+                <span class="tech-pill"><i class="fas fa-users"></i> Trabajo en equipo</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fas fa-folder-open"></i> <span id="titulo-proyectos">Proyectos Destacados</span>
+        </h2>
+
+        <div class="cards">
+          <!-- Proyecto 1 -->
+          <article class="card">
+            <div class="card-icon">
+              <i class="fas fa-book-reader"></i>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="badge">Python</span>
+                <span class="badge">Árbol Binario</span>
+                <span class="badge">POO</span>
+              </div>
+              <h3><span id="titulo-proyecto-1">Sistema de Biblioteca</span></h3>
+              <p><span id="descripcion-proyecto-1">Un sistema completo en Python implementado con estructuras de árbol binario de búsqueda para la gestión eficiente de préstamos, devoluciones y catálogos de libros.</span></p>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-card">
+                <i class="fab fa-github"></i> <span class="txt-ver-codigo">Ver Código</span>
+              </a>
+              <a href="#contacto" class="btn-card outline">
+                <i class="fas fa-info-circle"></i> <span class="txt-detalles">Consultar</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="card">
+            <div class="card-icon">
+              <i class="fas fa-ticket-alt"></i>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="badge">Full Stack</span>
+                <span class="badge">Pagos Online</span>
+                <span class="badge">Web App</span>
+              </div>
+              <h3><span id="titulo-proyecto-2">Uniraff</span></h3>
+              <p><span id="descripcion-proyecto-2">Plataforma web para gestión y venta de rifas con pasarela de pagos integrada, verificación automática de números y control administrativo centralizado.</span></p>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-card">
+                <i class="fab fa-github"></i> <span class="txt-ver-codigo">Ver Código</span>
+              </a>
+              <a href="#contacto" class="btn-card outline">
+                <i class="fas fa-info-circle"></i> <span class="txt-detalles">Consultar</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fas fa-paper-plane"></i> <span id="titulo-contacto">Contáctame</span>
+        </h2>
+
+        <div class="contacto-wrapper">
+          <div class="contacto-info">
+            <h3 id="contacto-info-titulo">¡Hablemos de tus proyectos!</h3>
+            <p id="contacto-info-sub">¿Tienes una propuesta, idea o vacante disponible? Estoy listo para aportar valor a tu equipo o proyecto.</p>
+
+            <div class="info-items">
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4 id="lbl-correo">Correo electrónico</h4>
+                  <a href="mailto:Wilmeee70@gmail.com">Wilmeee70@gmail.com</a>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fab fa-linkedin"></i>
+                <div>
+                  <h4>LinkedIn</h4>
+                  <a href="https://www.linkedin.com/in/wilmer-hinestroza-palacios-9b75962b0/" target="_blank" rel="noopener noreferrer">wilmer-hinestroza-palacios</a>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fab fa-github"></i>
+                <div>
+                  <h4>GitHub</h4>
+                  <a href="https://github.com/Wilmerpalacios" target="_blank" rel="noopener noreferrer">Wilmerpalacios</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- WhatsApp Box -->
+            <div class="whatsapp-card">
+              <i class="fab fa-whatsapp"></i>
+              <div>
+                <p id="texto-whatsapp">¿Prefieres comunicación rápida por WhatsApp?</p>
+                <a href="https://wa.me/573234478529" target="_blank" rel="noopener noreferrer" id="link-whatsapp" class="btn-whatsapp">
+                  <i class="fab fa-whatsapp"></i> <span id="btn-whatsapp-txt">Enviar mensaje directo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulario de Contacto -->
+          <div class="contacto-form-container">
+            <!-- Mensaje de estado AJAX (éxito/error) -->
+            <div id="form-status" class="form-status" style="display: none;"></div>
+
+            <form id="contact-form" action="https://formspree.io/f/mzzvgzaj" method="POST">
+              <div class="form-group">
+                <label for="input-nombre" id="lbl-input-nombre">Tu nombre completo</label>
+                <input type="text" name="name" id="input-nombre" placeholder="Ej. Carlos Mendoza" required />
+              </div>
+
+              <div class="form-group">
+                <label for="input-correo" id="lbl-input-correo">Tu correo electrónico</label>
+                <input type="email" name="email" id="input-correo" placeholder="Ej. carlos@empresa.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="input-mensaje" id="lbl-input-mensaje">Tu mensaje</label>
+                <textarea name="message" id="input-mensaje" rows="5" placeholder="Cuéntame sobre tu proyecto o consulta..." required></textarea>
+              </div>
+
+              <button type="submit" id="btn-enviar" class="btn btn-primary btn-block">
+                <i class="fas fa-paper-plane"></i> <span id="btn-enviar-txt">Enviar correo</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© 2025 Wilmer Hinestroza Palacios · <span id="footer-role">Ingeniero de Software & Analista de Datos</span></p>
+      <div class="footer-links">
+        <a href="mailto:Wilmeee70@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/wilmer-hinestroza-palacios-9b75962b0/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/Wilmerpalacios" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Particles.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <!-- JS Principal -->
+  <script src="script.js"></script>
+</body>
+</html>
