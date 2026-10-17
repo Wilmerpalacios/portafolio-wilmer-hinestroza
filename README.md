@@ -62,6 +62,7 @@ El portafolio refleja un perfil híbrido de alto valor tecnológico: **Ingenier�
   - Alternador instantáneo entre **Español (ES)** e **Inglés (EN)**.
   - Sin recargas de página.
   - Persistencia del idioma de preferencia en `localStorage` (`wilmer_portfolio_lang`).
+* 📄 **Descarga Directa de Hoja de Vida (CV):** Botones estilizados en la sección Hero e integrados en la barra de navegación (Navbar) para descargar el currículum en formato PDF de manera instantánea.
 * 📱 **Diseño 100% Responsivo:** Menú de navegación adaptable con apertura suave y control táctil para teléfonos, tablets y pantallas de escritorio.
 * 📨 **Formulario de Contacto Funcional vía AJAX:**
   - Envío asíncrono con `fetch()` hacia el endpoint de Formspree.
@@ -75,12 +76,17 @@ El portafolio refleja un perfil híbrido de alto valor tecnológico: **Ingenier�
 
 ```text
 Portafoliowhp/
+├── Cv/                        # Carpeta con documento curricular
+│   └── Hoja de vida WILMER HINESTROZA PALACIOS.pdf
+├── img/                       # Recursos multimedia y gráficos del proyecto
+│   ├── Imagenportafilio.png   # Captura y vista previa del portafolio web
+│   ├── Sonrisa_plena.png      # Captura y vista previa de Sonrisa Plena (Sistema Odontológico SPA)
+│   ├── developer.json         # Animación vectorial Lottie local (desarrollador programando)
+│   └── imagen-habilidades.png # Ilustración técnica de la sección de habilidades
 ├── index.html                 # Estructura semántica principal y marcado DOM
 ├── style.css                  # Hoja de estilos: variables CSS, layouts Grid/Flexbox y animaciones
 ├── script.js                  # Lógica interactiva: traducciones (i18n), AJAX, menú móvil y partículas
-├── img/                       # Recursos multimedia y gráficos del proyecto
-│   ├── developer.json         # Animación vectorial Lottie local (desarrollador programando)
-│   └── imagen-habilidades.png # Ilustración técnica de la sección de habilidades
+├── package.json               # Configuración de dependencias y scripts de desarrollo
 └── README.md                  # Documentación técnica integral y profesional
 ```
 
@@ -134,15 +140,15 @@ Portafoliowhp/
 
 4. **Habilidades & Tecnologías (`<section id="habilidades">`)**:
    - **Barra de Tecnologías Destacadas (`.tech-destacados`)**:
-     Píldoras con acento neón de las tecnologías insignia: `Python · Pandas · NumPy · Power BI · Excel · SQL · JavaScript · HTML · CSS · Git · GitHub · Django`.
-   - **Ilustración Lateral Fija (`.imagen-animada-lateral`)**:
-     Imagen técnica con posicionamiento adhesivo (`position: sticky; top: 100px`) y animación suave de flotación.
-   - **6 Categorías Profesionales Estructuradas** (ver sección 7 para la matriz completa).
+     Píldoras con acento neón de las tecnologías insignia: `Python · Streamlit · Pandas · NumPy · Matplotlib · Seaborn · Power BI · Excel · SQL · JavaScript · HTML · CSS · Git · GitHub · Django`.
+    - **Grid de 2 Columnas para Categorías (`.habilidades-grid`)**:
+      Distribución simétrica y centrada de las 6 categorías profesionales de habilidades (Análisis de Datos, Bases de Datos, Lenguajes, Desarrollo, Herramientas y Otras Habilidades).
 
 5. **Proyectos Destacados (`<section id="proyectos">`)**:
-   - **Sistema de Biblioteca**: Aplicación en Python con estructuras de árboles binarios de búsqueda (BST) y POO.
-   - **Uniraff**: Plataforma web para rifas con pasarela de pagos integrada y panel de administración centralizado.
-   - Botones funcionales para inspeccionar código en GitHub y contactar.
+   - **Portafolio Web Profesional**: Sitio web de portafolio moderno con arquitectura bilingüe (ES/EN), fondo de partículas dinámicas, diseño Glassmorphism y captura visual destacada (`img/Imagenportafilio.png`).
+   - **Sonrisa Plena — Sistema de Gestión Odontológica (SPA)**: Aplicación web Single-Page para la transformación digital de consultorios dentales con gestión de pacientes, citas, historiales clínicos, facturación y persistencia local (`img/Sonrisa_plena.png`).
+   - **Dashboard de analítica de ventas para cafetería**: Aplicación interactiva en Streamlit para analizar 10.000 transacciones a partir de un archivo CSV. Incluye limpieza de datos, imputación cruzada de nulos, filtros por ubicación/pago y visualización de KPI (`img/analitica-ventas-cafeteria.png`).
+   - Botones funcionales para inspeccionar código en GitHub y ver el proyecto en vivo o consultar.
 
 6. **Contacto (`<section id="contacto">`)**:
    - Columna informativa con accesos directos a Email, perfil de LinkedIn actualizado y caja destacada de WhatsApp.
