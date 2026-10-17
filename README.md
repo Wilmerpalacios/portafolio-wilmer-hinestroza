@@ -334,19 +334,10 @@ Todas las cadenas de texto se encuentran centralizadas en `script.js` dentro del
 Al ser una aplicación web estática pura (HTML5, CSS3 y JS), puede publicarse con costo cero y conexión segura HTTPS:
 
 ### Opción A: GitHub Pages (Recomendada)
-1. En la carpeta del proyecto, ejecuta:
-   ```bash
-   git init
-   git add .
-   git commit -m "Despliegue inicial portafolio profesional"
-   git branch -M main
-   git remote add origin https://github.com/Wilmerpalacios/Portafoliowhp.git
-   git push -u origin main
-   ```
-2. En tu repositorio de GitHub, ve a **Settings** > **Pages**.
-3. En **Source**, selecciona la rama `main` y la carpeta `/ (root)`.
-4. Guarda los cambios. En unos instantes tu portafolio estará publicado en:  
-   `https://Wilmerpalacios.github.io/Portafoliowhp/`
+1. En tu repositorio, ve a **Settings** > **Pages** y selecciona **GitHub Actions** como fuente de publicación.
+2. El workflow `.github/workflows/pages.yml` publica el sitio automáticamente cada vez que se actualiza la rama `main`. También puedes iniciarlo manualmente desde **Actions**.
+3. Cuando termine correctamente la primera ejecución, el portafolio estará disponible en:
+   `https://wilmerpalacios.github.io/portafolio-wilmer-hinestroza/`
 
 ### Opción B: Vercel o Netlify
 1. Ingresa a [vercel.com](https://vercel.com) o [netlify.com](https://www.netlify.com).
