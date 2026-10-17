@@ -17,12 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
       "nav-habilidades": "Habilidades",
       "nav-proyectos": "Proyectos",
       "nav-contacto": "Contacto",
+      "nav-cv-btn": '<i class="fas fa-file-arrow-down"></i> <span>CV</span>',
 
       // Hero
       "hero-badge": '<i class="fas fa-code"></i> Disponible para nuevos proyectos',
       "texto-uni": "Estudiante de último semestre de Ingeniería de Software · Diplomado en Análisis de Datos con Python",
       "hero-desc": "Enfocado en el desarrollo de software y el análisis de datos. Combino la ingeniería de software, bases de datos y Python para diseñar y construir soluciones tecnológicas modernas, sistemas inteligentes y análisis que potencian la toma de decisiones.",
       "btn-ver-proyectos": '<i class="fas fa-laptop-code"></i> <span>Ver Proyectos</span>',
+      "btn-descargar-cv": '<i class="fas fa-file-arrow-down"></i> <span>Descargar CV</span>',
       "btn-hero-contacto": '<i class="fas fa-envelope"></i> <span>Contáctame</span>',
 
       // Sobre Mí
@@ -51,12 +53,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Proyectos
       "titulo-proyectos": "Proyectos Destacados",
-      "titulo-proyecto-1": "Sistema de Biblioteca",
-      "descripcion-proyecto-1": "Un sistema completo en Python implementado con estructuras de árbol binario de búsqueda para la gestión eficiente de préstamos, devoluciones y catálogos de libros.",
-      "titulo-proyecto-2": "Uniraff",
-      "descripcion-proyecto-2": "Plataforma web para gestión y venta de rifas con pasarela de pagos integrada, verificación automática de números y control administrativo centralizado.",
+      "categoria-analitica": "Analítica y Big Data",
+      "categoria-software": "Ingeniería de Software",
+      "badge-proyecto-1": "Destacado",
+      "titulo-proyecto-1": "Portafolio Web Profesional",
+      "descripcion-proyecto-1": "Sitio web interactivo y responsivo con estética Glassmorphism, fondo de partículas dinámicas, arquitectura bilingüe (ES/EN) y formulario asíncrono con integración directa.",
+      "badge-proyecto-3": "SPA Odontológica",
+      "titulo-proyecto-3": "Sonrisa Plena — Gestión Odontológica",
+      "descripcion-proyecto-3": "Sistema Single-Page (SPA) desarrollado con JavaScript ES6+ modular (IIFE & Event Delegation), CSS3 moderno (Glassmorphism & Grid) y LocalStorage API. Permite gestionar pacientes, agenda de citas, historiales clínicos y facturación.",
+      "badge-proyecto-2": "Analítica & Streamlit",
+      "titulo-proyecto-2": "Dashboard de analítica de ventas para cafetería",
+      "descripcion-proyecto-2": "Aplicación interactiva para analizar 10.000 transacciones a partir de un archivo CSV. Limpia y transforma los datos, trata valores faltantes mediante imputación cruzada y permite filtrar por ubicación y método de pago. Presenta KPI y visualizaciones de tendencias temporales, productos, ventas por ubicación y pagos, además de una revisión de calidad y correlaciones. Incluye etiquetas de valores en las gráficas y una interfaz personalizada con CSS.",
+      "badge-proyecto-4": "Machine Learning & Streamlit",
+      "titulo-proyecto-4": "Café, salud y calidad del sueño",
+      "descripcion-proyecto-4": "Dashboard web interactivo que explora la relación entre el consumo de café, los indicadores de salud y la calidad del sueño. Incluye limpieza y exploración de unos 10.200 registros, compara modelos de Regresión Logística y Random Forest, y permite probar predicciones con datos ingresados por el usuario.",
       "txt-ver-codigo": "Ver Código",
+      "txt-ver-demo": "Ver Sitio",
       "txt-detalles": "Consultar",
+      "txt-ampliar": "Ampliar imagen",
 
       // Contacto
       "titulo-contacto": "Contáctame",
@@ -87,12 +101,14 @@ document.addEventListener("DOMContentLoaded", () => {
       "nav-habilidades": "Skills",
       "nav-proyectos": "Projects",
       "nav-contacto": "Contact",
+      "nav-cv-btn": '<i class="fas fa-file-arrow-down"></i> <span>CV</span>',
 
       // Hero
       "hero-badge": '<i class="fas fa-code"></i> Available for new projects',
       "texto-uni": "Final-Semester Software Engineering Student · Python Data Analysis Certified",
       "hero-desc": "Focused on software engineering and data analytics. I combine software development, relational databases, and Python to design modern tech solutions, scalable web systems, and data-driven insights that empower strategic decision-making.",
       "btn-ver-proyectos": '<i class="fas fa-laptop-code"></i> <span>View Projects</span>',
+      "btn-descargar-cv": '<i class="fas fa-file-arrow-down"></i> <span>Download CV</span>',
       "btn-hero-contacto": '<i class="fas fa-envelope"></i> <span>Contact Me</span>',
 
       // Sobre Mí
@@ -121,12 +137,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Proyectos
       "titulo-proyectos": "Featured Projects",
-      "titulo-proyecto-1": "Library Management System",
-      "descripcion-proyecto-1": "A complete Python management system built with binary search tree structures to optimize book loans, returns, and catalog queries.",
-      "titulo-proyecto-2": "Uniraff - Raffle Platform",
-      "descripcion-proyecto-2": "Comprehensive web platform for raffle management with integrated payment processing, automated ticket verification, and centralized admin panel.",
+      "categoria-analitica": "Analytics & Big Data",
+      "categoria-software": "Software Engineering",
+      "badge-proyecto-1": "Featured",
+      "titulo-proyecto-1": "Professional Web Portfolio",
+      "descripcion-proyecto-1": "Modern responsive portfolio website featuring bilingual architecture (ES/EN), Glassmorphism aesthetics, dynamic interactive particle background, and asynchronous contact integration.",
+      "badge-proyecto-3": "Dental SPA System",
+      "titulo-proyecto-3": "Sonrisa Plena — Dental Management",
+      "descripcion-proyecto-3": "Single-Page Application (SPA) built with modular Vanilla JS (IIFE & Event Delegation), CSS3 (Glassmorphism & Grid), and LocalStorage API. Manages patients, appointment scheduling, clinical histories, and billing.",
+      "badge-proyecto-2": "Data Analytics & Streamlit",
+      "titulo-proyecto-2": "Coffee Shop Sales Analytics Dashboard",
+      "descripcion-proyecto-2": "Interactive application to analyze 10,000 transactions from a CSV file. Cleans and transforms data, handles missing values through cross-imputation, and filters by location and payment method. Features KPIs and visualizations of temporal trends, products, sales by location and payments, quality audit, and correlations. Includes data labels on charts and custom CSS interface.",
+      "badge-proyecto-4": "Machine Learning & Streamlit",
+      "titulo-proyecto-4": "Coffee, Health & Sleep Quality",
+      "descripcion-proyecto-4": "Interactive web dashboard exploring the relationship between coffee consumption, health indicators, and sleep quality. It includes cleaning and exploration of approximately 10,200 records, compares Logistic Regression and Random Forest models, and lets users try predictions with their own input data.",
       "txt-ver-codigo": "View Code",
+      "txt-ver-demo": "View Live",
       "txt-detalles": "Inquire",
+      "txt-ampliar": "Expand image",
 
       // Contacto
       "titulo-contacto": "Contact Me",
@@ -197,6 +225,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".txt-detalles").forEach(span => {
       span.textContent = data["txt-detalles"];
     });
+    document.querySelectorAll(".txt-ver-demo").forEach(span => {
+      span.textContent = data["txt-ver-demo"];
+    });
+    document.querySelectorAll(".txt-ampliar").forEach(span => {
+      span.textContent = data["txt-ampliar"];
+    });
 
     // Actualizar estado activo en botones de idioma
     const btnEs = document.getElementById("btn-es");
@@ -247,9 +281,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Cerrar menú al hacer clic en cualquier enlace
-    document.querySelectorAll(".nav-link").forEach(link => {
-      link.addEventListener("click", () => {
+    // Cerrar menú al hacer clic en enlaces o botón CV
+    navWrapper.querySelectorAll(".nav-link, .nav-cv-btn").forEach(item => {
+      item.addEventListener("click", () => {
         navWrapper.classList.remove("open");
         const icon = navToggle.querySelector("i");
         if (icon) {
@@ -387,4 +421,67 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // ==========================================
+  // 6. MODAL LIGHTBOX (VISOR DE IMÁGENES)
+  // ==========================================
+  function initLightbox() {
+    const modal = document.getElementById("lightbox-modal");
+    const modalImg = document.getElementById("lightbox-img");
+    const modalCaption = document.getElementById("lightbox-caption");
+    const closeBtn = document.getElementById("lightbox-close");
+    const overlay = modal ? modal.querySelector(".lightbox-overlay") : null;
+
+    if (!modal || !modalImg) return;
+
+    // Abrir modal para imágenes de tarjetas de proyectos
+    const projectContainers = document.querySelectorAll(".card-img-container");
+
+    projectContainers.forEach((container) => {
+      const img = container.querySelector(".card-img");
+      if (!img) return;
+
+      container.addEventListener("click", () => {
+        const cardTitle = container.closest(".card")?.querySelector("h3")?.textContent || img.alt;
+        openModal(img.src, img.alt || cardTitle, cardTitle);
+      });
+    });
+
+    function openModal(src, altText, captionText) {
+      modalImg.src = src;
+      modalImg.alt = altText || "Imagen ampliada";
+      if (modalCaption) {
+        modalCaption.textContent = captionText || "";
+      }
+
+      modal.classList.add("active");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal() {
+      modal.classList.remove("active");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+      setTimeout(() => {
+        modalImg.src = "";
+      }, 300);
+    }
+
+    if (closeBtn) {
+      closeBtn.addEventListener("click", closeModal);
+    }
+
+    if (overlay) {
+      overlay.addEventListener("click", closeModal);
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && modal.classList.contains("active")) {
+        closeModal();
+      }
+    });
+  }
+
+  initLightbox();
 });

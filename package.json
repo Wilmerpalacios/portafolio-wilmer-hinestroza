@@ -1,0 +1,21 @@
+{
+  "name": "portafoliowhp",
+  "version": "1.0.0",
+  "description": "Portafolio profesional de Wilmer Hinestroza Palacios",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=5500 --cors --watch=.",
+    "start": "live-server --port=5500 --cors --watch=."
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "python",
+    "software-engineering"
+  ],
+  "author": "Wilmer Hinestroza Palacios",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
